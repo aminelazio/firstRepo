@@ -1,0 +1,70 @@
+git fetch --all
+git pull BR-02
+
+pull request = merge request
+
+demande fi remote pour merger branch fi branch
+
+e724c81a75e9f292260a9887976e7ef493d155a4
+
+>main
+git checkout BR-01
+>BR-01
+git fetch BR-01
+git pull BR-01
+
+git merge BR-02 => pull/Merge Request BR-02>BR-01 (1: remote to remote , 2: request)
+
+git push BR-01
+
+conflit => ça demande quoi
+
+t=1
+
+branch BR-03 source from develop
+branch BR-04 source from develop
+
+t=2
+conflit
+
+il faut ramener les changements de BR-03=>
+git co develop
+git pull develop
+
+---------
+git merge BR-04
+git push develop => pas de droits
+
+----------
+developer
+maintainer 
+owner
+
+-------------------
+il faut ramener les changements de main=>
+git co main
+git pull main
+
+git co BR-03 
+git merge main => copier l'historique des commits de main dans BR-03
+
+
+---------------------
+
+git reset --hard 656d7c9b46937db63a2e1e83fbaeb6deb8a54359
+
+change HEAD to commit number 656d7c9b46937db63a2e1e83fbaeb6deb8a54359 and delete changes 
+
+git reset 656d7c9b46937db63a2e1e83fbaeb6deb8a54359
+
+change HEAD to commit number 656d7c9b46937db63a2e1e83fbaeb6deb8a54359 and keep changes to unstaged 
+
+
+----------------------------- 
+
+
+
+
+
+
+
